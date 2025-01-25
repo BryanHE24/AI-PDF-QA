@@ -1,4 +1,4 @@
-# Bryan's PDF Question Answering App
+# PDF Question Answering App
 
 ## Overview
 This Streamlit-based application allows users to upload PDF files, summarize their content, and ask questions about the extracted text using AI.
