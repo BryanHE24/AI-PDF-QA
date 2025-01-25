@@ -15,3 +15,18 @@ def extract_text_from_pdf(pdf_file):
     for page in doc:
         text += page.get_text()
     return text
+
+# function to summarize text with GroqCloud using the Llama-3.1-8b-instant model
+def summarize_text(text):
+    try:
+        summary_response = client.chat.completions.create(
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": f"Summarize the following text: {text}"}
+            ],
+            model="llama-3.1-8b-instant",
+        )
+        return summary_response.choices[0].message.content
+    except Exception as e:
+        return f"An error occurred: {e}"
+
