@@ -35,8 +35,7 @@ This Streamlit-based application allows users to upload PDF files, summarize the
     # Initialize the Groq client
     client = Groq(api_key='key') # change 'key' and add your API key 
     ```
-4. Run the application
-    After doing the steps above, you're ready to go. Use this command to start the app and enjoy :)
+4. Run the application and enjoy :)
     ```bash
     streamlit run app.py
     ```
