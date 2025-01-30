@@ -49,7 +49,7 @@ def ask_question(context, question):
 
 # Front-End
 # Streamlit UI
-st.title("Bryan's PDF Question Answering App")
+st.title("PDF Question Answering App")
 uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
 if uploaded_file is not None:
